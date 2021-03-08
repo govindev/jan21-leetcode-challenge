@@ -16,7 +16,7 @@ public class CheckArrayFormationThroughConcatenation {
 	public boolean canFormArray(int[] arr, int[][] pieces) {
 		List<int[]> orderedPieces = new ArrayList<>();
 		int[] orderedArray = new int[arr.length];
-		for (int i = 0, k = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < pieces.length; j++) {
 				if (arr[i] == pieces[j][0]) {
 					orderedPieces.add(pieces[j]);
